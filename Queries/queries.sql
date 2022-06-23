@@ -161,4 +161,16 @@ INNER JOIN dept_employee AS de
 ON (re.emp_no = de.emp_no)
 INNER JOIN departments AS d
 ON (de.dept_no = d.dept_no)
+WHERE dept_name = 'Sales';
+
+-- Info for Sales and Development Team
+SELECT re.emp_no,
+	re.first_name,
+	re.last_name,
+	d.dept_name
+FROM retirement_info as re
+INNER JOIN dept_employee AS de
+ON (re.emp_no = de.emp_no)
+INNER JOIN departments AS d
+ON (de.dept_no = d.dept_no)
 WHERE dept_name IN ('Sales', 'Development');
