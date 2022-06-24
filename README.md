@@ -28,12 +28,14 @@ From the above results we can see that management will have to fill a gap of 72,
 ### Additional Tables
 #### Mentorship Spread
 The following table shows the spread of the mentors expertise:
+
 ![Mentorship Spread](https://github.com/msshahid21/Pewlett-Hackard-Analysis/blob/main/Resources/Mentorship_Spread_Titles.png)
 
 As can be seen from the above, most of the mentors have the Staff and Senior Engineer Title, while many Senior Engineers will be required to train future employees, there is more of a need for Senior Staff employees rather than Staff employees for mentoring. Therefore, the two problems arise with the current range of mentors, there are not enough mentors, and the spread of the mentors experience is not similar to the spread of the titles of the retiring employees.
 
 #### Retirees by Department
 The following table shows the retirees per department:
+
 ![Department Retirees](https://github.com/msshahid21/Pewlett-Hackard-Analysis/blob/main/Resources/Retiring_Departments.png)
 
 As can be seen from above the Development, Production, and Sales departments will require most of the hiring (63% of vacancies). This will give management an additional insight on the most common skills that will be required by the new hires.
