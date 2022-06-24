@@ -43,3 +43,28 @@ ON t.emp_no = e.emp_no
 WHERE de.to_date = '9999-01-01'
 	AND e.birth_date BETWEEN '1965-01-01' AND '1965-12-31'
 ORDER BY e.emp_no ASC, to_date DESC
+
+-- Additional Tables
+
+-- Query for Mentorship Spread
+SELECT title, COUNT(emp_no)
+FROM mentorship_eligibilty
+GROUP BY 1
+ORDER BY 2 DESC;
+
+-- Use Dictinct with Orderby to remove duplicate rows
+SELECT DISTINCT ON (de.emp_no) de.emp_no, e.birth_date, d.dept_name
+INTO retirement_departments
+FROM dept_employee AS de
+INNER JOIN departments AS d
+ON d.dept_no = de.dept_no
+INNER JOIN employees as e
+ON e.emp_no = de.emp_no
+WHERE de.to_date = '9999-01-01'
+	AND e.birth_date BETWEEN '1952-01-01' AND '1955-12-31'
+ORDER BY de.emp_no ASC;
+
+SELECT dept_name, COUNT(emp_no)
+FROM retirement_departments
+GROUP BY 1
+ORDER BY 2 DESC;
