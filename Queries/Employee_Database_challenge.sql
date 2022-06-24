@@ -52,7 +52,7 @@ FROM mentorship_eligibilty
 GROUP BY 1
 ORDER BY 2 DESC;
 
--- Use Dictinct with Orderby to remove duplicate rows
+-- Create Table for Departments of Retiring Employees
 SELECT DISTINCT ON (de.emp_no) de.emp_no, e.birth_date, d.dept_name
 INTO retirement_departments
 FROM dept_employee AS de
@@ -64,6 +64,7 @@ WHERE de.to_date = '9999-01-01'
 	AND e.birth_date BETWEEN '1952-01-01' AND '1955-12-31'
 ORDER BY de.emp_no ASC;
 
+-- Get Count of Retiring Employees by Department
 SELECT dept_name, COUNT(emp_no)
 FROM retirement_departments
 GROUP BY 1
