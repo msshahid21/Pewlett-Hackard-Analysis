@@ -10,7 +10,7 @@ The total number of employees in PH are 300,024 employees, out of which 72,458 a
 ### Retiring Titles
 The Titles that have the most retiring employees are Senior Engineers and Senior Staff, which collectively accounts for 70% of all the retiring titles.
 
-![Retiring Titles]()
+![Retiring Titles](https://github.com/msshahid21/Pewlett-Hackard-Analysis/blob/main/Resources/Retiring_Titles.png)
 
 ### Seniority of Retirees
 From the above table it can be seen that most of the retiring employees are also high ranking, and are in leadership positions, with only 7,636 of the retiring employees employed as staff members.
@@ -28,12 +28,12 @@ From the above results we can see that management will have to fill a gap of 72,
 ### Additional Tables
 #### Mentorship Spread
 The following table shows the spread of the mentors expertise:
-![Mentorship Spread]()
+![Mentorship Spread](https://github.com/msshahid21/Pewlett-Hackard-Analysis/blob/main/Resources/Mentorship_Spread_Titles.png)
 
 As can be seen from the above, most of the mentors have the Staff and Senior Engineer Title, while many Senior Engineers will be required to train future employees, there is more of a need for Senior Staff employees rather than Staff employees for mentoring. Therefore, the two problems arise with the current range of mentors, there are not enough mentors, and the spread of the mentors experience is not similar to the spread of the titles of the retiring employees.
 
 #### Retirees by Department
 The following table shows the retirees per department:
-![Department Retirees]()
+![Department Retirees](https://github.com/msshahid21/Pewlett-Hackard-Analysis/blob/main/Resources/Retiring_Departments.png)
 
 As can be seen from above the Development, Production, and Sales departments will require most of the hiring (63% of vacancies). This will give management an additional insight on the most common skills that will be required by the new hires.
